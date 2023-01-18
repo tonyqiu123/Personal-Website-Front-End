@@ -1,0 +1,29 @@
+.homeContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 110px;
+    align-items: center;
+    gap: 40px;
+    padding: 0 24px;
+
+}
+.HomeProjectContainer {
+    margin: auto;
+    width: 100%;
+
+}
+.HomeProjectContainer > img {
+    border-radius: 20px;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .homeContainer {
+        grid-template-columns: 1fr;
+        
+    }
+}
+* {
+}

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body::-webkit-scrollbar {
+    width: 0em;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: var(--neutral-1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-5);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+/* ROOT */
+:root {
+    --primary-1: #3CA44D;
+    --primary-2: #2A852E;
+    --primary-3: #206724;
+    --neutral-1: #171717;
+    --neutral-2: #303030;
+    --neutral-3: #A4A4A5;
+    --neutral-4: #e0e0e0;
+    --neutral-5: #e9e9e9;
+    --neutral-6: #fafafa;
+    --shadow-s: 0px 8px 5px -5px rgba(63, 63, 63, 0.1), 0px 4px 5px -6px rgba(39, 39, 39, 0.1);
+    --shadow-m: 0px 15px 10px -5px rgba(49, 49, 49, 0.1), 0px 8px 10px -6px rgba(32, 32, 32, 0.1);
+    --shadow-l: 0px 25px 50px -12px rgba(14, 14, 14, 0.25);
+}
+
+/* TYPOGRAPHY */
+span {
+    color: var(--primary-1);
+}
+
+a {
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: var(--neutral-6);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 165%;
+}
+
+.largeText {
+    font-size: 20px;
+}
+
+.smallText {
+    color: var(--neutral-5);
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+/* MY VER OF BOOTSTRAP */
+.title {
+    margin-bottom: 50px;
+}
+.dummyMargin {
+    height: 200px;
+}
+
+section {
+    color: #1d5025;
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 24px;
+    gap: 64px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Horizontal Line */
+.hr {
+    width: 100%;
+    background-color: var(--primary-1);
+    height: 2px;
+    margin: 8px 0;
+}
+
+/* NAVBAR */
+.myRole {
+    color: var(--neutral-3);
+}
+.navMobile {
+    border: none;
+    background-color: var(--neutral-1);
+}
+
+.navBlackBG {
+    opacity: 0;
+    transition: opacity .5s;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #0000007e;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.navLogo {
+    width: 100px;
+}
+
+.navDesktop {
+    position: fixed;
+    border-bottom: 1px solid var(--neutral-2);
+    width: 100%;
+    background-color: var(--neutral-1);
+}
+
+.navDesktop,
+.navMobile {
+    position: fixed;
+    z-index: 10;
+    padding: 0 16px;
+    height: 90px;
+}
+.navDesktop .navLogo {
+    margin-left: 12px;
+}
+
+.navDesktop-links {
+    gap: 32px;
+    margin-right: 24px;
+}
+
+.navDesktop-links>* {
+    transition: opacity .2s;
+}
+
+.navDesktop-links>*:hover {
+    opacity: .6;
+}
+
+.burger,
+.burgerMobile {
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+.burger:hover,
+.burgerMobile:hover {
+    opacity: .3;
+}
+
+.navDesktop>.burger {
+    margin-right: 10px;
+    display: none;
+}
+
+.navMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navDesktop-links {
+        display: none;
+    }
+
+    .navDesktop>.burger {
+        display: unset;
+    }
+
+    .navMobile {
+        display: unset;
+        padding: 0;
+        transform: translateX(100%);
+        transition: transform .5s;
+        max-width: 500px;
+        width: 100%;
+        background-color: var(--neutral-1);
+        height: 100vh;
+        position: fixed;
+        z-index: 12;
+        right: 0;
+        top: 0;
+    }
+
+    .navBlackBG.active {
+        opacity: 1;
+    }
+
+    .navMobile.active {
+        transform: unset;
+    }
+
+    .navMobile-top {
+        height: 90px;
+        padding: 0 32px;
+    }
+
+    .navMobile-bot>* {
+        cursor: pointer;
+        transition: opacity .2s;
+        width: 100%;
+        padding: 24px 32px;
+        border-top: 1px solid var(--neutral-2);
+    }
+
+    .navMobile-bot>*>p {
+        transition: transform .4s;
+    }
+
+    .navMobile-bot>*:hover>p {
+        font-style: italic;
+        transform: translateX(16px);
+    }
+}
