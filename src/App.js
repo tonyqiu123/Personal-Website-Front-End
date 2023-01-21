@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import Navbar from "./components/Navbar"
->>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
 import SideNavBar from "./components/SideNavBar"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
@@ -25,13 +21,8 @@ function App() {
 
   return (
     <div>
-<<<<<<< HEAD
       <SideNavBar/>
       <div className='dummyMargin'></div>
-=======
-    <SideNavBar/>
-    <div className='dummyMargin'></div>
->>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
       <AnimatePresence>
         <Routes>
           <Route path="/" element={<Home />}/>
