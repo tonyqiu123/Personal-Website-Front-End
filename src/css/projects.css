@@ -19,7 +19,10 @@
     padding: 32px 0;
     width: 100%;
 }
-
+.projectsContainer > .project:first-child {
+    padding: 32px 16px;
+    gap: 24px;
+}
 .project>* {
     width: 100%;
 }
@@ -49,7 +52,7 @@
 }
 
 .projectPadding {
-    padding: 32px 24px;
+    padding: 32px 16px;
     gap: 32px;
 }
 
@@ -64,7 +67,7 @@
 
 .AProjectCont:hover .projectPadding>* {
     opacity: .5;
-    transform: translateX(17px);
+    transform: translateX(16px);
 }
 
 .AProjectCont:hover .projectPadding>.h6 {
@@ -115,6 +118,15 @@
     }
     .tools {
         display: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    .projectsContainer > .project:first-child {
+        padding: 0 16px 24px 16px;
+        gap: 24px;
+    }
+    .h6 h6 {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 470px) {

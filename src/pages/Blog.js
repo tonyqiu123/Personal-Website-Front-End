@@ -31,9 +31,9 @@ const Blog = ({ blogData }) => {
       <section className='blogTitle title column'>
         <h1>Blog</h1>
         <div className='row tagButtContainer'>
-          <div className={`reset ${activeTag === '' ? 'activeTag' : ''}`} onClick={handleResetClick}>Show All</div>
+          <p className={`reset ${activeTag === '' ? 'activeTag' : ''}`} onClick={handleResetClick}>Show All</p>
           {uniqueTags.map(tag => (
-            <div key={tag} className={`tagButt ${activeTag === tag ? 'activeTag' : ''}`} onClick={() => handleTagClick(tag)}>{tag}</div>
+            <p key={tag} className={`tagButt ${activeTag === tag ? 'activeTag' : ''}`} onClick={() => handleTagClick(tag)}>{tag}</p>
           ))}
         </div>
         <div className='blogContainer column'>

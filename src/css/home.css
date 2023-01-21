@@ -24,3 +24,8 @@
         
     }
 }
+@media screen and (max-width: 650px) {
+    .homeContainer {
+        padding: 0 16px;
+    }
+}

@@ -2,6 +2,7 @@ import SideNavBar from "./components/SideNavBar"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Blog from "./pages/Blog"
+import Listen from "./pages/Listen"
 import { Route, Routes } from 'react-router-dom'
 import React, { useEffect,useState } from 'react';
 import BlogPost from './components/BlogPost'
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route exact path="/projects" element={<Projects />}/>
           <Route exact path="/blog" element={<Blog blogData={blogData}/>}/>
+          <Route exact path="/listen" element={<Listen/>}/>
           {blogData.map(blog => (
             <Route key={blog._id} path={`/blog/${blog.title.replace(/\s+/g, '-')}`} element={<BlogPost data={blog} />} />
           ))}

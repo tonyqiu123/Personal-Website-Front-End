@@ -101,7 +101,7 @@ section {
     max-width: 1500px;
     margin: auto;
     padding: 0 24px;
-    gap: 64px;
+    gap: 40px;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -157,7 +157,7 @@ section {
     width: 20px;
 }
 .sideNav-socials > a > img {
-    width: 24px;
+    width: 20px;
 }
 .sideNav-top-link , .sideNav-socials > a {
     opacity: .5;
@@ -171,8 +171,14 @@ section {
 }
 
 @media screen and (max-width: 650px) {
+    section {
+        padding: 0 16px;
+    }
+    h1 {
+        font-size: 34px;
+    }
     .dummyMargin {
-        height: 100px;
+        height: 24px;
     }
     body {
         padding-left: 60px;
@@ -186,6 +192,9 @@ section {
     }
     .sideNav-logo > p {
         display: none;
+    }
+    .sideNav-top {
+        gap: 32px;
     }
     .sideNav-top-link > p {
         display: none;

@@ -8,6 +8,7 @@ export default function Home() {
 
   return (
     <AnimatedPage>
+
         <div className='homeContainer'>
           <HomeProject href="https://brightbearsinfo.com/" image="https://cdn.discordapp.com/attachments/715319623637270638/1064087964411498616/image_34.png" />
           <HomeProject href="https://tonyswebdesigns.ca/" image="https://cdn.discordapp.com/attachments/715319623637270638/1064087964084359188/image_27.png" />

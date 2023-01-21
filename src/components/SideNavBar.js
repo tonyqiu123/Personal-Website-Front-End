@@ -11,6 +11,7 @@ import git from '../images/git.svg'
 import home from '../images/home.svg'
 import projects from '../images/projects.svg'
 import blog from '../images/blog.svg'
+import music from '../images/music.svg'
 import resume from '../images/resume.svg'
 
 export default function SideNavBar() {
@@ -45,6 +46,10 @@ export default function SideNavBar() {
                 <Link to="/blog" className='sideNav-top-link row' id={location.pathname === '/blog' ? 'activeNavLink' : ''}>
                     <img src={blog}/>
                     <p>Blog</p>
+                </Link>
+                <Link to="/listen" className='sideNav-top-link row' id={location.pathname === '/listen' ? 'activeNavLink' : ''}>
+                    <img src={music}/>
+                    <p>Listen Along</p>
                 </Link>
                 <div className='hr'></div>
                 <Link to={resumePDF} target="_blank" className='sideNav-top-link row'>

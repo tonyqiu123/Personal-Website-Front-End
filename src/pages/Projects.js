@@ -9,9 +9,9 @@ function Projects() {
 
     <AnimatedPage>
       <section className='title column'>
-        <h1>Projects</h1>
+        <h1>All Projects</h1>
         <div className='projectsContainer column'>
-          <div className='row project' style={{ padding: '32px 24px', gap: '24px' }}>
+          <div className='row project'>
             <h6>NAME</h6>
             <p className='tools'>TOOLS</p>
             <p className='responsibilities'>DESCRIPTION</p>
