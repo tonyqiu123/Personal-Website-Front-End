@@ -9,6 +9,9 @@ body {
     overflow-x: hidden;
     background-color: var(--neutral-1);
 }
+body {
+    padding-left: 200px;
+}
 
 * {
     box-sizing: border-box;
@@ -90,7 +93,7 @@ h6 {
     margin-bottom: 50px;
 }
 .dummyMargin {
-    height: 200px;
+    height: 100px;
 }
 
 section {
@@ -125,133 +128,20 @@ section {
 }
 
 /* NAVBAR */
-.myRole {
-    color: var(--neutral-3);
-}
-.navMobile {
-    border: none;
-    background-color: var(--neutral-1);
-}
-
-.navBlackBG {
-    opacity: 0;
-    transition: opacity .5s;
-    width: 100%;
+.sideNav {
     height: 100vh;
     position: fixed;
-    background-color: #0000007e;
-    z-index: 11;
     top: 0;
     left: 0;
-    pointer-events: none;
-}
-
-.navLogo {
-    width: 100px;
-}
-
-.navDesktop {
-    position: fixed;
-    border-bottom: 1px solid var(--neutral-2);
-    width: 100%;
+    width: fit-content;
+    padding: 24px;
+    z-index: 50;
     background-color: var(--neutral-1);
+    border-right: 1px solid var(--neutral-3);
 }
-
-.navDesktop,
-.navMobile {
-    position: fixed;
-    z-index: 10;
-    padding: 0 16px;
-    height: 90px;
+.sideNav-socials{
+    gap: 16px;
 }
-.navDesktop .navLogo {
-    margin-left: 12px;
-}
-
-.navDesktop-links {
-    gap: 32px;
-    margin-right: 24px;
-}
-
-.navDesktop-links>* {
-    transition: opacity .2s;
-}
-
-.navDesktop-links>*:hover {
-    opacity: .6;
-}
-
-.burger,
-.burgerMobile {
-    cursor: pointer;
-    transition: opacity .3s;
-}
-
-.burger:hover,
-.burgerMobile:hover {
-    opacity: .3;
-}
-
-.navDesktop>.burger {
-    margin-right: 10px;
-    display: none;
-}
-
-.navMobile {
-    display: none;
-}
-
-@media screen and (max-width: 1000px) {
-    .navDesktop-links {
-        display: none;
-    }
-
-    .navDesktop>.burger {
-        display: unset;
-    }
-
-    .navMobile {
-        display: unset;
-        padding: 0;
-        transform: translateX(100%);
-        transition: transform .5s;
-        max-width: 500px;
-        width: 100%;
-        background-color: var(--neutral-1);
-        height: 100vh;
-        position: fixed;
-        z-index: 12;
-        right: 0;
-        top: 0;
-    }
-
-    .navBlackBG.active {
-        opacity: 1;
-    }
-
-    .navMobile.active {
-        transform: unset;
-    }
-
-    .navMobile-top {
-        height: 90px;
-        padding: 0 32px;
-    }
-
-    .navMobile-bot>* {
-        cursor: pointer;
-        transition: opacity .2s;
-        width: 100%;
-        padding: 24px 32px;
-        border-top: 1px solid var(--neutral-2);
-    }
-
-    .navMobile-bot>*>p {
-        transition: transform .4s;
-    }
-
-    .navMobile-bot>*:hover>p {
-        font-style: italic;
-        transform: translateX(16px);
-    }
+.sideNav-socials > a > img {
+    width: 24px;
 }

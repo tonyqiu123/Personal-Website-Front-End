@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import SideNavBar from "./components/SideNavBar"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Blog from "./pages/Blog"
@@ -20,8 +21,8 @@ function App() {
   }, []);
 
   return (
-    <>
-    <Navbar/>
+    <div>
+    <SideNavBar/>
     <div className='dummyMargin'></div>
       <AnimatePresence>
         <Routes>
@@ -33,7 +34,7 @@ function App() {
           ))}
         </Routes>
       </AnimatePresence>
-    </>
+    </div>
   );
 }
 
