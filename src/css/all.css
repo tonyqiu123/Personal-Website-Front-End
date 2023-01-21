@@ -10,7 +10,11 @@ body {
     background-color: var(--neutral-1);
 }
 body {
+<<<<<<< HEAD
     padding-left: 220px; 
+=======
+    padding-left: 200px;
+>>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
 }
 
 * {
@@ -93,7 +97,11 @@ h6 {
     margin-bottom: 50px;
 }
 .dummyMargin {
+<<<<<<< HEAD
     height: 140px;
+=======
+    height: 100px;
+>>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
 }
 
 section {
@@ -127,6 +135,7 @@ section {
 }
 
 /* NAVBAR */
+<<<<<<< HEAD
 .sideNav-logo img {
     width: 125px;
 }
@@ -134,11 +143,14 @@ section {
     font-size: 16px;
     color: var(--neutral-3);
 }
+=======
+>>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
 .sideNav {
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     width: 220px;
     padding: 32px 24px;
     z-index: 50;
@@ -194,4 +206,17 @@ section {
         gap: 24px;
         flex-direction: column;
     }
+=======
+    width: fit-content;
+    padding: 24px;
+    z-index: 50;
+    background-color: var(--neutral-1);
+    border-right: 1px solid var(--neutral-3);
+}
+.sideNav-socials{
+    gap: 16px;
+}
+.sideNav-socials > a > img {
+    width: 24px;
+>>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
 }
