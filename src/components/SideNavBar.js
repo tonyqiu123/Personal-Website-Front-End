@@ -1,23 +1,13 @@
-<<<<<<< HEAD
 import { Link, useLocation } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 import '../css/all.css'
-import Burger from '../images/Burger.svg'
 import desktopLogo from '../images/desktopLogo.svg'
 import mobileLogo from '../images/mobileLogo.svg'
-=======
-import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
-import '../css/all.css'
-import Burger from '../images/Burger.svg'
-import SquareLogo from '../images/SquareLogo.svg'
->>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
 import resumePDF from '../images/resume.pdf'
 import dribbble from '../images/dribbble.svg'
 import linkedin from '../images/linkedin.svg'
 import instagram from '../images/instagram.svg'
 import git from '../images/git.svg'
-<<<<<<< HEAD
 import home from '../images/home.svg'
 import projects from '../images/projects.svg'
 import blog from '../images/blog.svg'
@@ -59,44 +49,15 @@ export default function SideNavBar() {
                 <div className='hr'></div>
                 <Link to={resumePDF} target="_blank" className='sideNav-top-link row'>
                     <img src={resume}/>
-=======
-
-export default function SideNavBar() {
-    return (
-        <div className='sideNav column'>
-            <div className='sideNav-top column'>
-                <Link to="/"><img src=""/></Link>
-                <Link to="/" className='row'>
-                    <img src=""/>
-                    <p>Home</p>
-                </Link>
-                <Link to="/projects" className='row'>
-                    <img src=""/>
-                    <p>All Projects</p>
-                </Link>
-                <Link to="/blog" className='row'>
-                    <img src=""/>
-                    <p>Blog</p>
-                </Link>
-                <Link to={resumePDF} target="_blank" className='row'>
-                    <img src=""/>
->>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
                     <p>Resume</p>
                 </Link>
             </div>
             
             <div className='sideNav-socials row'>
-<<<<<<< HEAD
                 <a target="_blank" href='https://github.com/tonyqiu123'><img src={git}/></a>
                 <a target="_blank" href='https://www.linkedin.com/in/tonyqiu1/'><img src={linkedin}/></a>
                 <a target="_blank" href='https://dribbble.com/tonyqiu12345'><img src={dribbble}/></a>
                 <a target="_blank" href='https://www.instagram.com/tony_q04/'><img src={instagram}/></a>
-=======
-                <a target="_blank" href='https://dribbble.com/tonyqiu12345'><img src={dribbble}/></a>
-                <a target="_blank" href='https://www.linkedin.com/in/tonyqiu1/'><img src={linkedin}/></a>
-                <a target="_blank" href='https://www.instagram.com/tony_q04/'><img src={instagram}/></a>
-                <a target="_blank" href='https://github.com/tonyqiu123'><img src={git}/></a>
->>>>>>> 74b8b31f72e90dc62dbc41ea508de9c220165a70
             </div>
         </div>
     )
