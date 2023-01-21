@@ -270,6 +270,7 @@
         font-size: 14px;
     }
     .BlogPost-body {
+        margin-top: 50px;
         padding-bottom: 0;
     }
 }
