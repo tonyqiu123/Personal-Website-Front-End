@@ -47,10 +47,10 @@ export default function SideNavBar() {
                     <img src={blog}/>
                     <p>Blog</p>
                 </Link>
-                <Link to="/listen" className='sideNav-top-link row' id={location.pathname === '/listen' ? 'activeNavLink' : ''}>
+                {/* <Link to="/listen" className='sideNav-top-link row' id={location.pathname === '/listen' ? 'activeNavLink' : ''}>
                     <img src={music}/>
                     <p>Listen Along</p>
-                </Link>
+                </Link> */}
                 <div className='hr'></div>
                 <Link to={resumePDF} target="_blank" className='sideNav-top-link row'>
                     <img src={resume}/>
