@@ -2,7 +2,6 @@ import React from 'react';
 import '../css/home.css';
 import '../css/all.css'
 import AnimatedPage from '../components/AnimatedPage'
-import SquareLogo from '../images/SquareLogo.svg'
 import HomeProject from '../components/HomeProject';
 
 export default function Home() {

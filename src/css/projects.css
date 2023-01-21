@@ -45,11 +45,12 @@
 
 .project>.date {
     grid-column: span 1;
+    white-space: nowrap;
 }
 
 .projectPadding {
     padding: 32px 24px;
-    gap: 24px;
+    gap: 32px;
 }
 
 .projectHover {
@@ -96,4 +97,28 @@
 
 :root {
     --image-height: 0;
+}
+@media screen and (max-width: 1000px) {
+    .project > h6, .h6 {
+        grid-column: span 4 !important;
+    }
+    .responsibilities {
+        display: none;
+    }
+    .tools {
+        grid-column: span 3 !important;
+    }
+}
+@media screen and (max-width: 750px) {
+    .project > h6, .h6 {
+        grid-column: span 7 !important;
+    }
+    .tools {
+        display: none;
+    }
+}
+@media screen and (max-width: 470px) {
+    .date {
+        display: none;
+    }
 }

@@ -1,5 +1,8 @@
 .blogContainer {
-    gap: 32px;
+    gap: 24px;
+    max-width: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .tagButtContainer {
@@ -34,7 +37,6 @@
 }
 
 .blog {
-    max-width: 800px;
     border-radius: 8px;
     width: 100%;
     padding: 24px;
@@ -197,12 +199,17 @@
 .BlogPost-body a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 1200px) {
+    .blogContainer {
+        grid-template-columns: 1fr;
+    }
+}
 @media screen and (max-width: 1000px) {
     .BlogPost-hero  {
         padding: 50px 32px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .BlogPost-hero  {
         padding: 32px;
     }
