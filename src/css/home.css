@@ -9,15 +9,32 @@
     padding: 0 24px;
 
 }
-.HomeProjectContainer {
+.HomeProjectContainer, .loadingSkeleton {
     margin: auto;
     width: 100%;
 
 }
-.HomeProjectContainer > img {
+.HomeProjectContainer > img, .loadingSkeleton {
     border-radius: 20px;
     width: 100%;
 }
+.loadingSkeleton {
+    height: 500px;
+    background-color: rgb(48, 48, 48);
+    overflow: hidden;
+}
+.loadingSkeleton::after {
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height:100%;
+    box-shadow: 0 0 100px 50px rgba(160, 160, 160, 0.5);
+    animation: skeleton1 1s linear infinite alternate;
+}
+
 @media screen and (max-width: 1500px) {
     .homeContainer {
         grid-template-columns: 1fr;
@@ -29,3 +46,13 @@
         padding: 0 16px;
     }
 }
+@keyframes skeleton1 {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1000px);
+      opacity: 1;
+    }
+  }
