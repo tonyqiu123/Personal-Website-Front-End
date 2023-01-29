@@ -1,8 +1,8 @@
-<h1>Steps</h1>:
+<h1>Steps</h1>
 
-1. Clone this repo
-2. Open terminal and enter "npm i"
-3. In terminal, enter "npm start"
+<p>1. Clone this repo</p>
+<p>2. Open terminal and enter "npm i"</p>
+<p>3. In terminal, enter "npm start"</p>
 
 Result:
 
